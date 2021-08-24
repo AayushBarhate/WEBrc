@@ -3,14 +3,15 @@
 #include <WebSocketsServer.h>
 #include <ESP32Servo.h>
 #include <WiFiAP.h>
-//-----------------------------------------------
+
+
 const char *ssid = "WEBrc";
 const char *password = "letmeinplz";
-//-----------------------------------------------
-//-----------------------------------------------
+
+
 WebServer server(80);
 WebSocketsServer webSocket = WebSocketsServer(81);
-//-----------------------------------------------
+
 
 int front=0;
 int Steer=0;
@@ -26,14 +27,14 @@ void setup()
   myservo.attach(servoPin);
   myservo.write(87);
   myservo.setPeriodHertz(50);
-  //-----------------------------------------------
+
   WiFi.softAP(ssid, password);
   Serial.println();
+
   Serial.print("Local IP: ");
   Serial.println(WiFi.softAPIP());
-  //-----------------------------------------------
   server.on("/", webpage);
-  //-----------------------------------------------
+  
   server.begin(); webSocket.begin();
   webSocket.onEvent(webSocketEvent);
 }
@@ -41,7 +42,7 @@ void setup()
 void loop()
 {
   webSocket.loop(); server.handleClient();
-  //-----------------------------------------------
+
   if(front == 1) {
     digitalWrite(25,HIGH);
     digitalWrite(26,LOW);

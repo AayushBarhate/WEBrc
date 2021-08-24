@@ -1,14 +1,10 @@
 
-//=======================================
-//handle function: send webpage to client
-//=======================================
+
 void webpage()
 {
   server.send(200,"text/html", webpageCode);
 }
-//=====================================================
-//function process event: new data received from client
-//=====================================================
+
 void webSocketEvent(uint8_t num, WStype_t type, uint8_t *payload, size_t welength)
 {
   String payloadString = (const char *)payload;
