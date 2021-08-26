@@ -1,4 +1,10 @@
 # WEBrc
+
+                       I do not appreciate forks of this repo if you are not gonna edit it or change something
+
+                                                          WEBrc Dev
+                                                       Aayush Barhate
+
 Just A Rc Car With ESP32 (Websocket)
 
 Required Libraries :-
