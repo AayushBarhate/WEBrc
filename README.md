@@ -22,4 +22,4 @@ P25 And P26 Are OutPuts For Motor
 
 P13 Is For Servo 
 
-IF You Need Any Help Regarding This Project Contact Me At - aayushbarhate@yandex.com
+IF You Need Any Help Regarding This Project Contact Me At - aayushbarhate@outlook.in
