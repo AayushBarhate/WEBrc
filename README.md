@@ -10,7 +10,7 @@ WiFiWebServer - https://www.arduino.cc/reference/en/libraries/wifiwebserver
 
 `Wiring` :-
 
-I am Using A L239D Motor Driver Cicuit
+I am Using A L239D Motor Driver Circuit
 
 P25 And P26 Are OutPuts For Motor 
 
